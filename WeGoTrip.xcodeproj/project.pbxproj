@@ -12,6 +12,12 @@
 		841BBEB0282D7141009FA4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841BBEAF282D7141009FA4C0 /* Assets.xcassets */; };
 		841BBEB3282D7141009FA4C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841BBEB1282D7141009FA4C0 /* LaunchScreen.storyboard */; };
 		841BBEBC282D8BAD009FA4C0 /* FeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BBEBB282D8BAD009FA4C0 /* FeedbackController.swift */; };
+		841BBEBE282E3148009FA4C0 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BBEBD282E3148009FA4C0 /* FeedbackView.swift */; };
+		841BBEC028310ACC009FA4C0 /* FeedbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BBEBF28310ACC009FA4C0 /* FeedbackViewModel.swift */; };
+		841BBEC2283112F5009FA4C0 /* FeedbackController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BBEC1283112F5009FA4C0 /* FeedbackController+Table.swift */; };
+		841BBEC428313509009FA4C0 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BBEC328313509009FA4C0 /* DataStore.swift */; };
+		841BBEC8283179BA009FA4C0 /* QuestionSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BBEC7283179BA009FA4C0 /* QuestionSliderCell.swift */; };
+		841BBECA283270AB009FA4C0 /* FeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BBEC9283270AB009FA4C0 /* FeedbackService.swift */; };
 		8D35760980E1BD8A2F5C1C22 /* Pods_WeGoTrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501530918D064EE72748CBAF /* Pods_WeGoTrip.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +31,12 @@
 		841BBEB2282D7141009FA4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841BBEB4282D7141009FA4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841BBEBB282D8BAD009FA4C0 /* FeedbackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackController.swift; sourceTree = "<group>"; };
+		841BBEBD282E3148009FA4C0 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
+		841BBEBF28310ACC009FA4C0 /* FeedbackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewModel.swift; sourceTree = "<group>"; };
+		841BBEC1283112F5009FA4C0 /* FeedbackController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedbackController+Table.swift"; sourceTree = "<group>"; };
+		841BBEC328313509009FA4C0 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		841BBEC7283179BA009FA4C0 /* QuestionSliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSliderCell.swift; sourceTree = "<group>"; };
+		841BBEC9283270AB009FA4C0 /* FeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackService.swift; sourceTree = "<group>"; };
 		E690B917C393D4B3AD075C56 /* Pods-WeGoTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeGoTrip.debug.xcconfig"; path = "Target Support Files/Pods-WeGoTrip/Pods-WeGoTrip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +87,12 @@
 			isa = PBXGroup;
 			children = (
 				841BBEBB282D8BAD009FA4C0 /* FeedbackController.swift */,
+				841BBEC1283112F5009FA4C0 /* FeedbackController+Table.swift */,
+				841BBEBD282E3148009FA4C0 /* FeedbackView.swift */,
+				841BBEBF28310ACC009FA4C0 /* FeedbackViewModel.swift */,
+				841BBEC328313509009FA4C0 /* DataStore.swift */,
+				841BBEC7283179BA009FA4C0 /* QuestionSliderCell.swift */,
+				841BBEC9283270AB009FA4C0 /* FeedbackService.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -210,9 +228,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841BBEC428313509009FA4C0 /* DataStore.swift in Sources */,
 				841BBEAB282D7140009FA4C0 /* ViewController.swift in Sources */,
+				841BBECA283270AB009FA4C0 /* FeedbackService.swift in Sources */,
+				841BBEBE282E3148009FA4C0 /* FeedbackView.swift in Sources */,
 				841BBEA7282D7140009FA4C0 /* AppDelegate.swift in Sources */,
+				841BBEC028310ACC009FA4C0 /* FeedbackViewModel.swift in Sources */,
 				841BBEBC282D8BAD009FA4C0 /* FeedbackController.swift in Sources */,
+				841BBEC8283179BA009FA4C0 /* QuestionSliderCell.swift in Sources */,
+				841BBEC2283112F5009FA4C0 /* FeedbackController+Table.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

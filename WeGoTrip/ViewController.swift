@@ -15,11 +15,13 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = button.frame.height/2
         button.backgroundColor = .blue
         button.setTitle("Оставить отзыв", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         return button
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         setupSubviews()
     }
 
@@ -30,6 +32,10 @@ class ViewController: UIViewController {
             make.center.equalToSuperview()
         }
     }
-
+    
+    @objc func buttonAction() {
+        let vc = FeedbackController(with: FeedbackViewModel(questionType: .questions1))
+        vc.modalPresentationStyle = .popover
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
-
