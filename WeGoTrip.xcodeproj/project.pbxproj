@@ -18,6 +18,7 @@
 		841BBEC428313509009FA4C0 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BBEC328313509009FA4C0 /* DataStore.swift */; };
 		841BBEC8283179BA009FA4C0 /* QuestionSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BBEC7283179BA009FA4C0 /* QuestionSliderCell.swift */; };
 		841BBECA283270AB009FA4C0 /* FeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BBEC9283270AB009FA4C0 /* FeedbackService.swift */; };
+		841BBECE283416AE009FA4C0 /* QuestionInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BBECD283416AE009FA4C0 /* QuestionInputCell.swift */; };
 		8D35760980E1BD8A2F5C1C22 /* Pods_WeGoTrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501530918D064EE72748CBAF /* Pods_WeGoTrip.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		841BBEC328313509009FA4C0 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		841BBEC7283179BA009FA4C0 /* QuestionSliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSliderCell.swift; sourceTree = "<group>"; };
 		841BBEC9283270AB009FA4C0 /* FeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackService.swift; sourceTree = "<group>"; };
+		841BBECD283416AE009FA4C0 /* QuestionInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionInputCell.swift; sourceTree = "<group>"; };
 		E690B917C393D4B3AD075C56 /* Pods-WeGoTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeGoTrip.debug.xcconfig"; path = "Target Support Files/Pods-WeGoTrip/Pods-WeGoTrip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +77,7 @@
 			children = (
 				841BBEA6282D7140009FA4C0 /* AppDelegate.swift */,
 				841BBEAA282D7140009FA4C0 /* ViewController.swift */,
-				841BBEBA282D8AD3009FA4C0 /* New Group */,
+				841BBEBA282D8AD3009FA4C0 /* Model */,
 				841BBEAF282D7141009FA4C0 /* Assets.xcassets */,
 				841BBEB1282D7141009FA4C0 /* LaunchScreen.storyboard */,
 				841BBEB4282D7141009FA4C0 /* Info.plist */,
@@ -83,18 +85,35 @@
 			path = WeGoTrip;
 			sourceTree = "<group>";
 		};
-		841BBEBA282D8AD3009FA4C0 /* New Group */ = {
+		841BBEBA282D8AD3009FA4C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				841BBED12834EBA4009FA4C0 /* Controller */,
+				841BBED02834EB99009FA4C0 /* View */,
+				841BBEBF28310ACC009FA4C0 /* FeedbackViewModel.swift */,
+				841BBEC328313509009FA4C0 /* DataStore.swift */,
+				841BBEC9283270AB009FA4C0 /* FeedbackService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		841BBED02834EB99009FA4C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				841BBEBD282E3148009FA4C0 /* FeedbackView.swift */,
+				841BBEC7283179BA009FA4C0 /* QuestionSliderCell.swift */,
+				841BBECD283416AE009FA4C0 /* QuestionInputCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		841BBED12834EBA4009FA4C0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				841BBEBB282D8BAD009FA4C0 /* FeedbackController.swift */,
 				841BBEC1283112F5009FA4C0 /* FeedbackController+Table.swift */,
-				841BBEBD282E3148009FA4C0 /* FeedbackView.swift */,
-				841BBEBF28310ACC009FA4C0 /* FeedbackViewModel.swift */,
-				841BBEC328313509009FA4C0 /* DataStore.swift */,
-				841BBEC7283179BA009FA4C0 /* QuestionSliderCell.swift */,
-				841BBEC9283270AB009FA4C0 /* FeedbackService.swift */,
 			);
-			path = "New Group";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		A1613950D665696F3D52F429 /* Pods */ = {
@@ -236,6 +255,7 @@
 				841BBEC028310ACC009FA4C0 /* FeedbackViewModel.swift in Sources */,
 				841BBEBC282D8BAD009FA4C0 /* FeedbackController.swift in Sources */,
 				841BBEC8283179BA009FA4C0 /* QuestionSliderCell.swift in Sources */,
+				841BBECE283416AE009FA4C0 /* QuestionInputCell.swift in Sources */,
 				841BBEC2283112F5009FA4C0 /* FeedbackController+Table.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

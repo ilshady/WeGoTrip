@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = button.frame.height/2
         button.backgroundColor = .blue
         button.setTitle("Оставить отзыв", for: .normal)
-        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        button.addTarget(ViewController.self, action: #selector(buttonAction), for: .touchUpInside)
         return button
     }()
 
@@ -35,7 +35,8 @@ class ViewController: UIViewController {
     
     @objc func buttonAction() {
         let vc = FeedbackController(with: FeedbackViewModel(questionType: .questions1))
-        vc.modalPresentationStyle = .popover
-        self.navigationController?.pushViewController(vc, animated: true)
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: true)
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
